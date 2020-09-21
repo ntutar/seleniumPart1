@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Group5Selenium" />
+        <module name="seleniumPart1" />
       </profile>
     </annotationProcessing>
   </component>
