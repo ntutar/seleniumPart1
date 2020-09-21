@@ -59,55 +59,55 @@ public class SmokeTestDriver {
         }
     }
 
-//    @Test
-//    public void odometerPageIsDisplayedVerificationSergi() {
-//        DashboardPage page = new DashboardPage(driver);
-//        page.goToOdometerPage();
-//        VyTrackVerifications verification = new VyTrackVerifications(driver);
-//        verification.verifyVehicleOdometerPageIsDisplayed();
-//        System.out.println("Odometer Page Is Displayed test PASS");
-//    }
-//
-//    @Test
-//    //*AC3. Verify that truck driver should be able to delete or edit Vehicle odometer.
-//    public void edit_delete_button_verificationMuha() throws InterruptedException {
-//        Thread.sleep(2000);
-//        WebElement fleetModule = driver.findElement(By.linkText("Fleet"));
-//        fleetModule.click();
-//        // driver.findElement(By.xpath("//*[@class='dropdown dropdown-level-1']")).click();
-//        Thread.sleep(2000);
-//        // driver.findElement(By.xpath("//span[.='Vehicle Odometer']")).click();
-//        WebElement vehicleOdometerModule = driver.findElement(By.xpath("//span[contains(text(),'Vehicle Odometer')]"));
-//        vehicleOdometerModule.click();
-//        Thread.sleep(5000);
-//        WebElement createVehicle = driver.findElement(By.xpath("//a[@class ='btn main-group btn-primary pull-right ']"));
-//        createVehicle.click();
-//        Thread.sleep(4000);
-//        WebElement clickSaveButton = driver.findElement(By.xpath("//button[@type='submit']"));
-//        clickSaveButton.click();
-//        Thread.sleep(3000);
-//        WebElement clickDeleteVehicleButton = driver.findElement(By.xpath("//a[@title='Delete Vehicle Odometer']"));
-//        clickDeleteVehicleButton.click();
-//        Thread.sleep(3000);
-//        WebElement deleteVehicle = driver.findElement(By.xpath("//a[.='Yes, Delete']"));
-//        deleteVehicle.click();
-//        Thread.sleep(3000);
-//    }
-//
-//    @Test
-//    public void test1_vehicle_odometerPageYonas()throws InterruptedException{
-//        WebElement fleetModule = driver.findElement(By.linkText("Fleet"));
-//        fleetModule.click();
-//        Thread.sleep(1000);
-//        WebElement vehicleOdometer = driver.findElement(By.xpath("//span[contains(text(),'Vehicle Odometer')]"));
-//        vehicleOdometer.click();
-//        Thread.sleep(3000);
-//        WebElement SelectVehicle = driver.findElement(By.xpath("//tr[6]//td[4]"));
-//        SelectVehicle.click();
-//        Thread.sleep(2000);
-//        WebElement editButton = driver.findElement(By.xpath("//*[@id='container']/div[2]/div[1]/div/div/div[1]/div[1]/div[1]/a"));
-//        editButton.click();
-//    }
+    @Test
+    public void odometerPageIsDisplayedVerificationSergi() {
+        DashboardPage page = new DashboardPage(driver);
+        page.goToOdometerPage();
+        VyTrackVerifications verification = new VyTrackVerifications(driver);
+        verification.verifyVehicleOdometerPageIsDisplayed();
+        System.out.println("Odometer Page Is Displayed test PASS");
+    }
+
+    @Test
+    //*AC3. Verify that truck driver should be able to delete or edit Vehicle odometer.
+    public void edit_delete_button_verificationMuha() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement fleetModule = driver.findElement(By.linkText("Fleet"));
+        fleetModule.click();
+        // driver.findElement(By.xpath("//*[@class='dropdown dropdown-level-1']")).click();
+        Thread.sleep(2000);
+        // driver.findElement(By.xpath("//span[.='Vehicle Odometer']")).click();
+        WebElement vehicleOdometerModule = driver.findElement(By.xpath("//span[contains(text(),'Vehicle Odometer')]"));
+        vehicleOdometerModule.click();
+        Thread.sleep(5000);
+        WebElement createVehicle = driver.findElement(By.xpath("//a[@class ='btn main-group btn-primary pull-right ']"));
+        createVehicle.click();
+        Thread.sleep(4000);
+        WebElement clickSaveButton = driver.findElement(By.xpath("//button[@type='submit']"));
+        clickSaveButton.click();
+        Thread.sleep(3000);
+        WebElement clickDeleteVehicleButton = driver.findElement(By.xpath("//a[@title='Delete Vehicle Odometer']"));
+        clickDeleteVehicleButton.click();
+        Thread.sleep(3000);
+        WebElement deleteVehicle = driver.findElement(By.xpath("//a[.='Yes, Delete']"));
+        deleteVehicle.click();
+        Thread.sleep(3000);
+    }
+
+    @Test
+    public void test1_vehicle_odometerPageYonas()throws InterruptedException{
+        WebElement fleetModule = driver.findElement(By.linkText("Fleet"));
+        fleetModule.click();
+        Thread.sleep(1000);
+        WebElement vehicleOdometer = driver.findElement(By.xpath("//span[contains(text(),'Vehicle Odometer')]"));
+        vehicleOdometer.click();
+        Thread.sleep(3000);
+        WebElement SelectVehicle = driver.findElement(By.xpath("//tr[6]//td[4]"));
+        SelectVehicle.click();
+        Thread.sleep(2000);
+        WebElement editButton = driver.findElement(By.xpath("//*[@id='container']/div[2]/div[1]/div/div/div[1]/div[1]/div[1]/a"));
+        editButton.click();
+    }
 
     @AfterMethod
     public void tearDown() {
