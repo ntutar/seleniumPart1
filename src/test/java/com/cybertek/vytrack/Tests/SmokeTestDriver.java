@@ -94,6 +94,21 @@ public class SmokeTestDriver {
         Thread.sleep(3000);
     }
 
+    @Test
+    public void test1_vehicle_odometerPage()throws InterruptedException{
+        WebElement fleetModule = driver.findElement(By.linkText("Fleet"));
+        fleetModule.click();
+        Thread.sleep(1000);
+        WebElement vehicleOdometer = driver.findElement(By.xpath("//span[contains(text(),'Vehicle Odometer')]"));
+        vehicleOdometer.click();
+        Thread.sleep(3000);
+        WebElement SelectVehicle = driver.findElement(By.xpath("//tr[6]//td[4]"));
+        SelectVehicle.click();
+        Thread.sleep(2000);
+        WebElement editButton = driver.findElement(By.xpath("//*[@id='container']/div[2]/div[1]/div/div/div[1]/div[1]/div[1]/a"));
+        editButton.click();
+    }
+
     @AfterMethod
     public void tearDown() {
         driver.quit();
